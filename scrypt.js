@@ -22,6 +22,7 @@ const y = new User("Zoro", "Roronoa", 25, "Shimotsuki");
 
 console.log(x.isSameAuthor(y));
 
+const petUserOne = {};
 class Pet {
   constructor(petName, ownerName, species) {
     this.petName = petName;
@@ -38,3 +39,8 @@ const pet3 = new Pet("Titty", "La Nonna", "Canary");
 console.log(pet1.isSameAuthor(pet2));
 console.log(pet1.isSameAuthor(pet3));
 console.log(pet2.isSameAuthor(pet3));
+const input = document.getElementById("input");
+input.addEventListener("change", () => {
+  return console.log((petUserOne["petName"] = input.value));
+});
+console.log(petUserOne);
